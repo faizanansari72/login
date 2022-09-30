@@ -1,0 +1,158 @@
+@import url(httpsl://fonts.googleapis.com/css?family=Roboto:300);
+
+/* body {
+  background: #00a1ff;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+} */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  
+  width: 360px;
+  background-color: #0e0000;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 89%), 0 5px 5px 0 rgb(0 0 0 / 275%);
+  padding: 10px;
+  border: 3px solid #ffffee;
+  border-radius: 7px;
+
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+ 
+ 
+}
+
+
+.form-field {
+  margin: 17px 48px 10px 46px;;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+input {
+  background: #a7a5a5;
+  border-radius: 6px;
+}
+input:hover{
+  background-color: pink;
+  border-style: dashed;
+}
+
+
+
+button {
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 305px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+button:disabled {
+  cursor: default;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  color: #3f89f8;
+}
+.second{
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+border-radius: 6px;
+}
+.first{
+  color: white;
+  margin-left: -6px;
+ 
+}
+.secondary{
+ display: flex;
+ margin-left: 146px;
+ padding-top: 11px;
+}
+.third{
+  background: #00a1ff;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  
+
+}
+
+
+
+.category{
+  /* display: flex; */
+  flex-direction: column;
+  margin-left: -725px;
+  
+}
+.list{
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0px;
+  padding: 8px 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.firstpage{
+  background: #00a1ff;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.secondpage{
+  background: #00a1ff;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  background: #00a1ff;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  padding: 0;
+}
+.btnzero{
+  background: #4caf50;
+    color: white;
+    cursor: pointer;
+    width: 105px;
+
+    border-radius: 6px;
+    margin-left: -500px;
+}
+

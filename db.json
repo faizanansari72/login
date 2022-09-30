@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "email": "user2@gmail.com",
+      "password": "12345"
+    },
+    {
+      "email": "shan@gmail.com",
+      "password": "12345",
+      "firstname": "noor",
+      "lastname": "shan",
+      "id": 3
+    },
+    {
+      "email": "ansari@gmail.com",
+      "password": "12345",
+      "firstname": "faizan",
+      "lastname": "ansari",
+      "id": 4
+    },
+    {
+      "email": "fgdfg@gm",
+      "password": "fgdhdh",
+      "firstname": "hdjha",
+      "lastname": "gsdg",
+      "id": 5
+    },
+    {
+      "email": "faiz@gmail.com",
+      "password": ",sksgjkdhsj",
+      "firstname": "hgdf",
+      "lastname": "jhss",
+      "id": 6
+    },
+    {
+      "email": "info@gmail.com",
+      "password": "12345",
+      "firstname": "nit",
+      "lastname": "info",
+      "id": 7
+    },
+    {
+      "email": "gjgjhgh@jgjg",
+      "password": "hhghghhh",
+      "firstname": "yfyf",
+      "lastname": "klklj",
+      "id": 8
+    },
+    {
+      "email": "saini@gmail.com",
+      "password": "1234saini",
+      "firstname": "adarsh",
+      "lastname": "saini",
+      "id": 9
+    },
+    {
+      "email": "singh@gmail.com",
+      "password": "12345",
+      "firstname": "priyanka",
+      "lastname": "singh",
+      "id": 10
+    }
+  ]
+}
