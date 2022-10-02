@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link , Navigate} from 'react-router-dom'
+import { createBrowserHistory } from "history";
 export default class Register extends Component {
  
 
@@ -12,14 +12,15 @@ export default class Register extends Component {
        firstname:"",
        lastname :"",
        email:"",
-       password: ""
+       password: "",
+       register : ""
     }
     this.handleusernameA=this.handleusernameA.bind(this)
     this.handleusernameB=this.handleusernameB.bind(this)
 
     this.handleusernameC=this.handleusernameC.bind(this)
     this.handleusernameD=this.handleusernameD.bind(this)
-
+    this.history = createBrowserHistory();
   }
   handleusernameA(e){
     this.setState({
@@ -67,7 +68,10 @@ export default class Register extends Component {
     body: JSON.stringify(formData),
     }).then(()=> {
       this.resetform()
-      alert("Registered successfully.")
+      this.setState({
+        register : "Registered Successfully"
+      })
+      // alert("Registered successfully.")
     }).catch((e) => {
       alert("something went wrong.")
     })
@@ -84,31 +88,36 @@ export default class Register extends Component {
   render() {
     return (
       <div className='secondpage'>
-      <div className='form-container'>
-        <h1 className='heading'>Registratiom Form</h1>
+      {!this.state.register ? <div className='form-container'>
+        <h1 className='heading'>Registration Form</h1>
         <form className='registor-form' onSubmit={this.handlesubmit}>
          <label>Firstname:</label>
-          <input type="text" placeholder='Enter Your First Name' value={this.state.firstname} onChange={this.handleusernameA} required  className="form-field" />
+          <input type="text" placeholder='Enter Your First Name' value={this.state.firstname} onChange={this.handleusernameA} required  className="form-field form-field-signup" />
    
 
           <label>Lastname:</label>
-          <input type="text" placeholder='Enter Your Last Name' value={this.state.lastname} onChange={this.handleusernameB}  required className="form-field"  />
+          <input type="text" placeholder='Enter Your Last Name' value={this.state.lastname} onChange={this.handleusernameB}  required className="form-field form-field-signup"  />
    
 
 
           <label> Email-id:</label>
-          <input type="email" placeholder='Enter Your Email' value={this.state.email} onChange={this.handleusernameC} required className="form-field"  />
+          <input type="email" placeholder='Enter Your Email' value={this.state.email} onChange={this.handleusernameC} required className="form-field form-field-signup"  />
          
           <label> Password:</label>
-          <input type="password" placeholder='Enter Your Password' value={this.state.password} onChange={this.handleusernameD}  required className="form-field"  />
+          <input type="password" placeholder='Enter Your Password' value={this.state.password} onChange={this.handleusernameD}  required className="form-field form-field-signup"  />
 
           <br></br>
           <br></br>
         
           <button>Submit</button>
-          <Link to="/" className='secondary'>Goto-Home</Link>
+          <div className='sign-up'>
+          <Link to="/" className='sign_up_link'>Login</Link>
+          </div>
         </form>
-      </div>
+        
+      </div >:
+     <Navigate to="/" />
+      }
       </div>
     )
   }

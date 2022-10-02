@@ -14,12 +14,12 @@
 
 .form-container {
   
-  width: 360px;
+  width: 310px;
   background-color: #0e0000;
-  margin: auto;
+  /* margin: auto; */
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 89%), 0 5px 5px 0 rgb(0 0 0 / 275%);
-  padding: 10px;
-  border: 3px solid #ffffee;
+  padding: 34px;
+  /* border: 3px solid #ffffee; */
   border-radius: 7px;
 
 }
@@ -36,20 +36,22 @@
 
 .form-field {
   margin: 17px 48px 10px 46px;;
-  padding: 15px;
-  font-size: 16px;
+  padding: 10px 15px;
+  /* font-size: 16px; */
   border: 0;
   font-family: "Roboto", sans-serif;
 }
 
-
+.form-field-signup {
+  margin: 0px 48px 0px 46px!important;
+}
 
 input {
   background: #a7a5a5;
   border-radius: 6px;
 }
 input:hover{
-  background-color: pink;
+  background-color: lightgray;
   border-style: dashed;
 }
 
@@ -59,7 +61,7 @@ button {
   background: #4caf50;
   color: white;
   cursor: pointer;
-  width: 305px;
+  width: 25%;
   padding: 8px;
   border-radius: 6px;
 }
@@ -90,7 +92,7 @@ border-radius: 6px;
  margin-left: 146px;
  padding-top: 11px;
 }
-.third{
+/* .third{
   background: #00a1ff;
   display: flex;
   min-height: 100vh;
@@ -99,28 +101,36 @@ border-radius: 6px;
 
   
 
-}
+} */
 
 
 
 .category{
   /* display: flex; */
   flex-direction: column;
-  margin-left: -725px;
+  background-color: #80808012;
+  /* margin-left: -325px; */
+  /* background-image: url("https://media.istockphoto.com/photos/80s-disco-party-on-colorful-brick-wall-banner-3d-render-illustration-picture-id1165960488"); */
+  margin: 10px;
+  padding: 17px 15px;
+  height: 120%;
+  width: 10%;
+  
   
 }
 .list{
   text-decoration: none;
   list-style: none;
-  margin: 20px 0px;
-  padding: 8px 25px;
+  text-align: left;
+  padding: 8.5px 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
 
 
 }
 
 .firstpage{
-  background: #00a1ff;
+  /* background: #00a1ff; */
   display: flex;
   min-height: 100vh;
   justify-content: center;
@@ -130,14 +140,14 @@ border-radius: 6px;
 
 }
 .secondpage{
-  background: #00a1ff;
+  /* background: #00a1ff; */
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-.navbar{
+/* .navbar{
   background: #00a1ff;
   display: flex;
   min-height: 100vh;
@@ -145,14 +155,44 @@ border-radius: 6px;
   align-items: center;
   margin: -8px;
   padding: 0;
-}
+} */
 .btnzero{
   background: #4caf50;
     color: white;
     cursor: pointer;
-    width: 105px;
-
+    /* width: 105px; */
+    /* margin-left: -1454px; */
+    background-color: darkgreen;
     border-radius: 6px;
-    margin-left: -500px;
+    /* margin-top: -7/px; */
+    /* background-image: url("https://www.valueresearchonline.com/content-assets/images/33691_all-about-nav1__w660__.jpg"); */
+  
 }
 
+.sign-up {
+  position: relative;
+  top: 15px;
+}
+.sign_up_link {
+  color: #3f89f8;
+  text-decoration: none;
+}
+
+.navItem {
+  text-decoration: none;
+  /* display: flex;
+  justify-content: center; */
+}
+/* .third-page{
+  background-image: url("https://media.istockphoto.com/photos/80s-disco-party-on-colorful-brick-wall-banner-3d-render-illustration-picture-id1165960488");
+  margin: 0;
+  padding: 0;
+  height: 120%;
+  width: 100%;
+  
+} */
+
+.list:hover {
+  background-color: #8080802e;
+  /* font-size: 100px; */
+}

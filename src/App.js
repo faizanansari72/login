@@ -28,20 +28,20 @@ function App() {
   <BrowserRouter>
     <Routes>
       <Route path = '/' element = {<Forms />}/>
-      <Route path = '/Register' element = {<Register />}/>
-      <Route path='/Dashboard' element = {<Dashboard/>}/>
-      <Route path='/Sales' element = {<Sales/>}/>
-      <Route path='/Customer' element = {<Customer/>}/>
-      <Route path='/Lead' element = {<Lead/>}/>
-      <Route path='/Admin' element = {<Admin/>}/>
-      <Route path='/Account' element = {<Account/>}/>
-      <Route path='/Master' element = {<Master/>}/>
-      <Route path='/Campaign' element = {<Campaign/>}/>
-      <Route path='/Email' element = {<Email/>}/>
-      <Route path='/Whatsapp' element = { <Whatsapp/>}/>
-      <Route path='/Telegram' element = {<Telegram/>}/>
-      <Route path='/SMS' element = {<SMS/>}/>
-      <Route path='/Report' element = {<Report/>}/>
+      <Route path = '/register' element = {<Register />}/>
+      <Route exact path='/dashboard' element = {<Dashboard/>}/>
+      <Route path='/sales' element = {<Sales/>}/>
+      <Route path='/customer' element = {<Customer/>}/>
+      <Route path='/lead' element = {<Lead/>}/>
+      <Route path='/admin' element = {<Admin/>}/>
+      <Route path='/account' element = {<Account/>}/>
+      <Route path='/master' element = {<Master/>}/>
+      <Route path='/campaign' element = {<Campaign/>}/>
+      <Route path='/mmail' element = {<Email/>}/>
+      <Route path='/whatsapp' element = { <Whatsapp/>}/>
+      <Route path='/telegram' element = {<Telegram/>}/>
+      <Route path='/sms' element = {<SMS/>}/>
+      <Route path='/report' element = {<Report/>}/>
      
 
     

@@ -65,6 +65,13 @@
       "firstname": "priyanka",
       "lastname": "singh",
       "id": 10
+    },
+    {
+      "email": "shan@gmail.com",
+      "password": "12345",
+      "firstname": "Noor",
+      "lastname": "shan",
+      "id": 11
     }
   ]
 }

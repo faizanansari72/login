@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, Navigate } from "react-router-dom";
 class Forms extends Component {
   constructor(props) {
     super(props);
@@ -8,6 +7,7 @@ class Forms extends Component {
     this.state = {
       email: "",
       password: "",
+      login: ""
     };
     this.handleusernameC = this.handleusernameC.bind(this);
     this.handleusernameB = this.handleusernameB.bind(this);
@@ -36,9 +36,12 @@ class Forms extends Component {
         },
       }
     )
-      .then((res) => res.json()).then((res)=>{
+      .then((res) => res.json())
+      .then((res) => {
         if (res.length) {
-          alert("Login successfully")
+          this.setState({
+            login: "success"
+          })
         } else {
           alert("invalid user credentials.");
         }
@@ -65,8 +68,8 @@ class Forms extends Component {
   render() {
     return (
       <div className="firstpage">
-        <div className="form-container">
-          <h1 className="heading">Login Form</h1>
+        {!this.state.login ? <div className="form-container">
+          <h1 className="heading">Login</h1>
           <form className="registor-form" onSubmit={this.handlesubmit}>
             <input
               type="email"
@@ -87,16 +90,15 @@ class Forms extends Component {
             <br></br>
             <br></br>
 
-            <button>Signin</button>
-            <p className="first">
-              Not a member? <Link to="/Register">Sign up</Link>
-          
-            </p>
-            <Link to="/Dashboard">
-              Dashboards
-            </Link>
+            <button>Sign in</button>
+            <div className="sign-up">
+              <span className="first">
+                Not a member? <Link to="/register" className="sign_up_link">Sign up</Link>
+              </span>
+              {/* <Link to="/Dashboard">Dashboards</Link> */}
+            </div>
           </form>
-        </div>
+        </div>: <Navigate to="/dashboard" />}
       </div>
     );
   }
