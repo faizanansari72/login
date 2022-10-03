@@ -1,29 +1,66 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {GoHome} from "react-icons/go"
+import {AiOutlineLineChart } from "react-icons/ai";
+import { FaRegHandshake } from "react-icons/fa";
+import {BiParagraph} from "react-icons/bi"
+import {GrUserAdmin} from "react-icons/gr"
+import {MdSupervisorAccount} from "react-icons/md"
+import {RiMastercardLine} from "react-icons/ri"
+import {SiCampaignmonitor} from "react-icons/si"
+import {MdOutlineEmail} from "react-icons/md"
+import {AiOutlineWhatsApp} from "react-icons/ai"
+import {BsTelegram} from "react-icons/bs"
+import {MdOutlineSms} from "react-icons/md"
+import {MdReportGmailerrorred} from "react-icons/md"
+import {RiLogoutCircleRLine} from "react-icons/ri"
+import {AiFillStar} from "react-icons/ai"
+import {IoIosSettings} from "react-icons/io"
+
+
+
+
+
 
 const navData = [
-  {navItem: "Sales", href: "/sales"},
-  {navItem: "Customer", href: "/customer"},
-  {navItem: "Admin", href: "/admin"},
-  {navItem: "Account", href: "/account"},
-  {navItem: "Master", href: "/master"},
-  {navItem: "Campaign", href: "/campaign"},
-  {navItem: "Email", href: "/email"},
-  {navItem: "Whatsapp", href: "/whatsapp"},
-  {navItem: "Telegram", href: "/telegram"},
-  {navItem: "SMS", href: "/sms"},
-  {navItem: "Report", href: "/report"},
-  {navItem: "Logout", href: "/logout"}];
+
+  {navItem: "Overview", href: "/overview", Icon: GoHome},
+  {navItem: "Sales", href: "/sales", Icon: AiOutlineLineChart},
+  {navItem: "Customer", href: "/customer", Icon: FaRegHandshake},
+  {navItem: "Lead", href: "/lead", Icon: BiParagraph},
+  {navItem: "Admin", href: "/admin", Icon: GrUserAdmin},
+  {navItem: "Account", href: "/account", Icon: MdSupervisorAccount},
+  {navItem: "Master", href: "/master", Icon: RiMastercardLine},
+  {navItem: "Campaign", href: "/campaign", Icon: SiCampaignmonitor},
+  {navItem: "Email", href: "/email", Icon: MdOutlineEmail},
+  {navItem: "Whatsapp", href: "/whatsapp", Icon: AiOutlineWhatsApp},
+  {navItem: "Telegram", href: "/telegram", Icon:BsTelegram },
+  {navItem: "SMS", href: "/sms", Icon: MdOutlineSms},
+  {navItem: "Report", href: "/report", Icon: MdReportGmailerrorred},
+  {navItem: "Logout", href: "/logout", Icon: RiLogoutCircleRLine},
+  {navItem: "Reviews", href: "/logout", Icon: AiFillStar},
+  {navItem: "Setting", href: "/setting", Icon: IoIosSettings}];
+
+
+
 
  function Dashboard () {
+  let elm = {
+    height:"40px"
+  }
   return (
     <div className='third-page'>
+      
+        {/* <h2>HUNK</h2> */}
+        <p> Logout</p>
     <nav className='navbar'>
   
        <ul className='category'>
+        <img src='https://www.nit-infotech.com/wp-content/uploads/2020/03/nit-infotech.png' alt="errror" style={elm}/>
         {
           navData.map((nav) => {
-            return <NavLink to={nav.href} className="navItem"><li className="list">{nav.navItem}</li></NavLink>;
+            const { Icon } = nav;
+            return <NavLink to={nav.href} className="navItem"><li className="list"><Icon />  <span className="nav-span">{nav.navItem}</span></li></NavLink>;
           })
         }  
        </ul>

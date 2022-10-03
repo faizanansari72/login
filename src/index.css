@@ -111,10 +111,12 @@ border-radius: 6px;
   background-color: #80808012;
   /* margin-left: -325px; */
   /* background-image: url("https://media.istockphoto.com/photos/80s-disco-party-on-colorful-brick-wall-banner-3d-render-illustration-picture-id1165960488"); */
-  margin: 10px;
-  padding: 17px 15px;
-  height: 120%;
-  width: 10%;
+  /* margin: 10px; */
+  padding: 25px 15px;
+  height: 112%;
+  width: 15%;
+  /* margin-top: 40px; */
+  position: absolute;
   
   
 }
@@ -122,10 +124,13 @@ border-radius: 6px;
   text-decoration: none;
   list-style: none;
   text-align: left;
-  padding: 8.5px 25px;
+  padding: 12.5px 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
 
 }
 
@@ -195,4 +200,30 @@ border-radius: 6px;
 .list:hover {
   background-color: #8080802e;
   /* font-size: 100px; */
+}
+.nav-span{
+  margin-left: 5px;
+}
+.tuesday{
+  background-color: gray;
+  color: #0e0000;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.tuesday h1 {
+  margin-left: 10px;
+}
+p{
+  display: flex;
+    justify-content: end;
+    margin-top: -25px;
+    color: #00098b;
+}
+h2{
+  display: flex;
+    position: absolute;
+    margin-left: 8px;
+
 }
